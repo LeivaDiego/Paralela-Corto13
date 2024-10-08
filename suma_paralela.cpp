@@ -15,7 +15,7 @@ int suma_parcial(const vector<int>& lista, int inicio, int fin) {
 
 int main() {
     // Generar una lista de números ejemplo
-    int n = 10;  // número de elementos en la lista
+    int n = 1000;  // número de elementos en la lista
     vector<int> lista(n);
 
     // Inicializar la lista con valores del 1 al n
