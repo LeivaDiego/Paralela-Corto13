@@ -23,8 +23,9 @@ int main() {
         lista[i] = i + 1;
     }
 
-    // Variable para almacenar la suma total
+    // Variable para almacenar la suma total paralela y secuencial
     int suma_total = 0;
+    int suma_sec = 0;
 
     // Definir el número de hilos y la partición
     int num_hilos = 4;
@@ -58,8 +59,14 @@ int main() {
         }
     }
 
+    // Suma secuencial de los elementos de la lista
+    for (int i = 0; i < n; i++) {
+        suma_sec += lista[i];
+    }
+
     // Mostrar la suma total
-    cout << "La suma total es: " << suma_total << endl;
+    cout << "La suma paralela total es: " << suma_total << endl;
+    cout << "La suma secuencial total es:" << suma_sec << endl;
 
     return 0;
 }
