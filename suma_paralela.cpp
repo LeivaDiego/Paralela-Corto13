@@ -66,7 +66,7 @@ int main() {
 
     // Mostrar la suma total
     cout << "La suma paralela total es: " << suma_total << endl;
-    cout << "La suma secuencial total es:" << suma_sec << endl;
+    cout << "La suma secuencial total es: " << suma_sec << endl;
 
     return 0;
 }
